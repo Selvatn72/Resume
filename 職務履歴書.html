@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>セルバ履歴書</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="container">
+        <div class="text"> 
+            <h1>セルバペルマル・ムーシ</h1>
+            <strong>ITアナリストエンジニア</strong><br>
+            <strong>電話番号: <a href="tel:817092262088">+817092262088</a></strong><br>
+            <strong>メール: <a href="mailto:selvamoorthy3010@gmail.com">selvamoorthy3010@gmail.com</a></strong><br>
+            <strong><a href="">LinkedInプロフィール</a></strong><br>
+            <strong>所在地: 東京、日本</strong><br>
+        </div>
+        <p class="clickable-text">セルバの画像をクリックしてください</p>  
+        <img src="selva.jpg" alt="セルバ" class="image" style="display:none;"> 
+    </div>
+    <script>
+        const text = document.querySelector('.clickable-text');
+        const image = document.querySelector('.image');
+
+        // クリックイベントのリスナーを追加
+        text.addEventListener('click', function() {
+            // 画像の表示プロパティを切り替える
+            if (image.style.display === 'none') {
+                image.style.display = 'block';  // 画像を表示
+                text.style.display = 'none';    // テキストを非表示
+            } else {
+                image.style.display = 'none';   // 画像を非表示
+                text.style.display = 'block';   // テキストを表示
+            }
+        });
+    </script>
+    
+    <h2>プロフェッショナルサマリー</h2>
+    <p>システム管理、ネットワーキング、在庫管理、ハードウェア/ソフトウェアメンテナンス、情報セキュリティに特化した6年以上の実務経験を持つIT専門家です。<br>
+    エンドユーザーのコンピューティング環境を管理し、グローバルおよびローカルITチーム間で円滑なコミュニケーションを促進する能力があります。日本語（N1）、英語、タミル語に堪能で、継続的な学習と専門的な成長に強いコミットメントを持っています。<br>
+    オペレーティングシステム（OS）のプロセスやマルチスレッドに関する基礎的な知識を有し、システムレベルでのリソース管理の理解と最適化が可能です。オブジェクト指向プログラミング（OOP）とPythonに精通しており、新しいプログラミング言語や技術に迅速に適応し、拡張性のある効率的なソリューションを構築するためにコアコンセプトを効果的に活用できます。</p>
+    <hr>    
+    <h2>スキルと専門知識</h2>
+    <ul>
+        <li>オペレーティングシステム: Windows, Linux</li>
+        <li>オペレーティングシステムがプロセスとスレッド、マルチタスク、リソース割り当てを管理する方法に対する強い理解。</li>
+        <li>OS内でのプロセス管理、メモリ管理、スケジューリングに精通。</li>
+        <li>ネットワーキング: L2ネットワーキング, VLAN, OSPF, ルーティング, TCP/IP</li>
+        <li>ツール: AWS, Active Directory, MS365, CCNA, Robocopy, グループポリシー</li>
+        <li>プログラミング言語: Python, HTML, CSS</li>
+        <li>Pythonの優れた知識、オブジェクト指向プログラミング（OOP）のコアコンセプトに関する理解（例：モジュール化された再利用可能なコードを書く能力、実用的な小規模アプリケーションの開発）。</li>
+        <li>新しいプログラミング言語とフレームワークを迅速に学ぶ能力。</li>
+        <li>トラブルシューティング:
+            <ul>
+                <li>ネットワーク</li>
+                <li>サーバー</li>
+                <li>デスクトップ/ラップトップ（修理）</li>
+            </ul>
+        </li>
+        <li>その他:
+            <ul>
+                <li>EUC</li>
+                <li>データセンター管理</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2>学歴</h2>
+    <ul>
+        <li>情報技術の学士（B-Tech）
+            <ul>
+                <li>SRMヴァリヤマイ工科大学, チェンナイ </li>
+                <li>アンナ大学</li>
+            </ul>
+        </li>
+        <li>電気電子工学のディプロマ
+            <ul>
+                <li>政府工業専門学校, チェンナイ</li>
+                <li>技術教育局</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2>経験</h2>
+
+    <h3>ITアナリスト</h3>
+    <p>Wipro Japan | 東京、日本</p>
+    <ul>
+        <li><strong>プロジェクト:</strong> オリンパスシステムエンジニア</li>
+        <li><strong>役割:</strong> グローバルインフラチームと日本のクライアントの橋渡しエンジニアとして活動。</li>
+        <li>L2ネットワークのトラブルシューティング、ハードウェアIMAC（インストール、移動、追加、変更）、デスクトップ、ラップトップ、プリンターの修理サービスを提供。</li>
+        <li>ファイルサーバー、プリントサーバー、バックアップを含むITインフラの管理。</li>
+        <li>ベンダーサービスの調整と、IT調達・メンテナンスの対応。</li>
+        <li><strong>メールドラフト作成の自動化:</strong> CSVファイルからデータを抽出して、メールのドラフトを自動生成するPythonスクリプトを開発。<br>
+        このシステムを使用して、SCCMで抽出したCSVファイルを使い、個別のメールを効率的に生成・送信。自動化により、特定のPCユーザー向けの繰り返しのコミュニケーションタスクの時間を大幅に削減。</li>
+    </ul>
+    <!-- 以下、残りの経歴と情報も同様に日本語に翻訳してください -->
+
+    <h3>資格</h3>
+    <ul>
+        <li>JLPT N2（日本語能力試験）</li>
+        <li>CCNA（Cisco認定ネットワークアソシエイト）</li>
+        <li>ITIL Foundation</li>
+        <li>AWS認定クラウドプラクティショナー</li> 
+        <li>Microsoft現代デスクトップ</li>
+    </ul>
+    <hr>
+    <h3>強み</h3>
+    <ul>
+        <li>学び続ける意欲: 常に技術スキルを向上させ、業界の最新動向に追いつこうとしています。</li>
+        <li>整理整頓: 未来のタスクやチームのコラボレーションに向けて、きれいで整理された作業スペースを維持しています。</li>
+    </ul>
+    <h3>言語</h3>
+    <ul>
+        <li>英語</li>
+        <li>日本語</li>
+        <li>タミル語</li>
+    </ul>
+    </body>
+</html>
