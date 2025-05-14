@@ -1,120 +1,295 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title>セルバ履歴書</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-      <div class="container">
-        <div class="text"> 
-            <h1>セルバペルマル・ムーシ</h1>
-            <strong>ITアナリストエンジニア</strong><br>
-            <strong>電話番号: <a href="tel:817092262088">+817092262088</a></strong><br>
-            <strong>メール: <a href="mailto:selvamoorthy3010@gmail.com">selvamoorthy3010@gmail.com</a></strong><br>
-            <strong><a href="">LinkedInプロフィール</a></strong><br>
-            <strong>所在地: 東京、日本</strong><br>
-        </div>
-        <p class="clickable-text">セルバの画像をクリックしてください</p>  
-        <img src="selva.jpg" alt="セルバ" class="image" style="display:none;"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>履歴書</title>
+    <style>
+        body {
+            font-family: 'Yu Mincho', '游明朝', serif;
+            line-height: 1.7;
+            margin: 40px;
+        }
+        .header {
+            display: flex;
+            justify-content: flex-start; /* 左寄せに変更 */
+            align-items: center; /* 中央揃えに変更 */
+            margin-bottom: 30px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+        }
+        .profile-info {
+            margin-left: 20px; /* 写真との間隔を調整 */
+        }
+        .profile-info h1 {
+            font-size: 2.0em; /* 少し小さく */
+            margin-bottom: 3px;
+        }
+        .profile-info strong {
+            display: block;
+            margin-bottom: 2px;
+        }
+        .profile-info a {
+            text-decoration: none;
+        }
+        .image-container {
+            width: 120px; /* 少し小さく */
+            height: 120px; /* 少し小さく */
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid #ccc;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .section-title {
+            font-size: 1.6em; /* 少し小さく */
+            margin-top: 25px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #666;
+            padding-bottom: 3px;
+        }
+        .summary-content, .skills-content, .education-content, .experience-content, .certifications-content, .strengths-content, .languages-content, .personal-statement-content {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .skills-list ul, .education-list ul, .experience-list ul, .certifications-list ul, .strengths-list ul, .languages-list ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .education-info {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 3px;
+        }
+        .experience-item {
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 1px solid #ccc;
+        }
+        .experience-item h3 {
+            font-size: 1.1em; /* 少し小さく */
+            margin-bottom: 3px;
+        }
+        .experience-item p {
+            margin-bottom: 3px;
+        }
+        .experience-item ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .experience-item strong {
+            font-weight: bold;
+        }
+        /* 日本の履歴書でよく見られる罫線スタイル */
+        .resume-container > section {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px dotted #999;
+        }
+        .resume-container > section:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container" id="japanese-resume">
+        <section class="header-section">
+            <div class="header">
+                <div class="image-container">
+                    <img src="selva.jpg" alt="セルバ様の写真">
+                </div>
+                <div class="profile-info">
+                    <h1>セルバペルマル・ムーシ</h1>
+                    <strong>ITアナリストエンジニア</strong><br>
+                    <strong>電話番号: <a href="tel:817092262088">+817092262088</a></strong><br>
+                    <strong>メール: <a href="mailto:selvamoorthy3010@gmail.com">selvamoorthy3010@gmail.com</a></strong><br>
+                 <strong>現住所: 東京都</strong><br>
+                </div>
+            </div>
+        </section>
+
+        <section class="summary-section">
+            <h2 class="section-title">職務概要</h2>
+            <div class="summary-content">
+                <p>システム管理、ネットワーキング、在庫管理、ハードウェア/ソフトウェアメンテナンス、情報セキュリティに特化した6年以上の実務経験を有するITプロフェッショナルです。エンドユーザーのコンピューティング環境を管理し、グローバルおよびローカルのITチーム間の円滑なコミュニケーションを促進して参りました。日本語（N1）、英語、タミル語に堪能であり、継続的な学習と専門能力開発に強くコミットしております。オペレーティングシステム（OS）のプロセスとマルチスレッドに関する強固な基礎知識を持ち、システムレベルのリソース管理を理解し最適化する能力がございます。オブジェクト指向プログラミング（OOP）とPythonに精通しており、新しいプログラミング言語やテクノロジーにも迅速に適応し、スケーラブルで効率的なソリューションを構築するためにコアコンセプトを効果的に活用することが可能です。</p>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2 class="section-title">スキルと専門知識</h2>
+            <div class="skills-content skills-list">
+                <ul>
+                    <li>オペレーティングシステム: Windows, Linux
+                        <ul>
+                            <li>オペレーティングシステムがプロセスとスレッド、マルチタスク、リソース割り当てをどのように管理するかについて深い理解を有しております。</li>
+                            <li>OS内でのプロセス管理、メモリ管理、スケジューリングに精通しております。</li>
+                        </ul>
+                    </li>
+                    <li>ネットワーキング: L2ネットワーキング, VLAN, OSPF, ルーティング, TCP/IP</li>
+                    <li>ツール: AWS, Active Directory, MS365, CCNA, Intune SCCM</li>
+                    <li>プログラミング言語: Python, HTML, CSS, javascript
+                        <ul>
+                            <li>オブジェクト指向プログラミング（OOP）のコアコンセプトを含む、Pythonの優れた知識を有しております。</li>
+                            <li>モジュール化された再利用可能なコードを作成し、実用的な小規模アプリケーションを開発する能力がございます。</li>
+                            <li>新しいプログラミング言語やフレームワークを迅速に学習する能力に長けております。</li>
+                        </ul>
+                    </li>
+                    <li>トラブルシューティング:
+                        <ul>
+                            <li>ネットワーク</li>
+                            <li>サーバー</li>
+                            <li>デスクトップ/ラップトップ（修理・交換）</li>
+                        </ul>
+                    </li>
+                    <li>その他:
+                        <ul>
+                            <li>EUC（エンドユーザーコンピューティング）</li>
+                            <li>データセンター管理</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="education-section">
+            <h2 class="section-title">学歴</h2>
+            <div class="education-content education-list">
+                <ul>
+                    <li>情報技術学士（B-Tech）
+                        <ul class="education-info">
+                            <li>SRMヴァリヤマイ工科大学, チェンナイ</li>
+                            <li>アンナ大学</li>
+                        </ul>
+                    </li>
+                    <li>電気電子工学ディプロマ
+                        <ul class="education-info">
+                            <li>政府工業専門学校, チェンナイ</li>
+                            <li>技術教育局</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="experience-section">
+            <h2 class="section-title">職務経歴</h2>
+            <div class="experience-content experience-list">
+                <div class="experience-item">
+                    <h3>ITアナリスト</h3>
+                    <p>Wipro Japan | 東京都</p>
+                    <p><strong>期間:</strong> 2024年3月 - 現在</p>
+                    <ul>
+                        <li><strong>プロジェクト:</strong> オリンパスシステムエンジニア</li>
+                        <li><strong>役割:</strong> グローバルインフラストラクチャチームと日本のクライアント間のブリッジエンジニアとして活動しております。</li>
+                        <li>デスクトップ、ラップトップ、プリンターのL2ネットワークのトラブルシューティング、ハードウェアIMAC（インストール、移動、追加、変更）、および修理サービスをご提供しております。</li>
+                        <li>ファイルサーバー、プリントサーバー、バックアップを含むITインフラストラクチャを管理しております。</li>
+                        <li>Microsoft Intuneで管理されたデバイスとアプリケーション展開のエンドユーザーおよびポリシーベースのサポートをご提供しております。</li>
+                        <li>ベンダーサービスとの調整、およびIT調達とメンテナンスを担当しております。</li>
+                        <li>データセンターにおけるネットワーク温度アラートに基づいたオンコールサポートを提供し、該当デバイスの特定とハンズオン作業を実施しております。</li>
+                        <li>データセンターにて、ルーター、サーバーなどの旧デバイスから新デバイスへの交換作業を担当しております。</li>
+                        <li>L3ネットワークチームと連携し、ネットワーク関連の問題解決や構成変更に対応しております。</li>
+                        <li><strong>特記事項:</strong> CSVファイルに保存されたデータからメールドラフトを自動生成するPythonスクリプトを開発し、SCCMで抽出されたデータに基づいたパーソナライズされたメールの効率的な生成・送信を実現しました。これにより、特定のPCユーザー向けの繰り返しコミュニケーションタスクにかかる時間を大幅に削減いたしました。</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>フィールドサービスエンジニア</h3>
+                    <p>TCSジャパン | 東京都</p>
+                    <p><strong>期間:</strong> 2022年10月 - 2023年5月</p>
+                    <ul>
+                        <li><strong>プロジェクト:</strong> カーギルジャパン</li>
+                        <li>グローバルインフラストラクチャチームと日本のクライアント間のブリッジエンジニアとして活動しておりました。</li>
+                        <li>プロジェクト仕様に合わせてネットワークデバイスをラックに搭載し、設定いたしました。</li>
+                        <li>デスクトップ、ラップトップ、プリンターのハードウェアIMACおよび修理・交換サービスをご提供しておりました。</li>
+                        <li>サーバー、ネットワーク、およびその他のサイト固有のITデバイスをサポートしておりました。</li>
+                        <li>サイトのファイル、印刷、バックアップサーバーのメンテナンスを管理しておりました。</li>
+                        <li>L3ネットワークチームと連携し、ネットワーク関連の問題解決や構成変更に対応しております。</li>
+                        <li>インフラストラクチャのメンテナンスのために、電力および通信ベンダーと調整しておりました。</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>テクニカルサポートエンジニア</h3>
+                    <p>富士通 | 東京都（CCW給与）</p>
+                    <p><strong>期間:</strong> 2020年1月 - 2022年9月</p>
+                    <ul>
+                        <li><strong>プロジェクト:</strong> 富士通FSASジャパン</li>
+                        <li>グループポリシーを構成および管理し、サーバーおよびワークステーションのTier 1および2のサポートをご提供しておりました。</li>
+                        <li>デスクトップ、ラップトップ、プリンターのオンサイトサポートをご提供しておりました。</li>
+                        <li>電話、メール、対面での技術的な問い合わせに対応しておりました。</li>
+                        <li>日本語と英語の技術文書およびサービスチケットを翻訳しておりました。</li>
+                        <li>Citrix Virtual Apps and Desktops（旧XenApp/XenDesktop）環境のトラブルシューティングとサポートをご提供しておりました。</li>
+                        <li>Microsoft Intuneで管理されたデバイスとアプリケーション展開のエンドユーザーおよびポリシーベースのサポートをご提供しておりました。</li>
+                        <li>ユーザーアクセスや同期エラーなど、Boxに関連するセキュアなコンテンツコラボレーションの問題に対応しておりました。</li>
+                        <li>ログイン失敗、証明書の問題、トンネルの切断など、Palo AltoのGlobalProtectを介したVPN接続をサポートしておりました。</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>サービスデスクエージェント</h3>
+                    <p>富士通コンサルティングインディアプライベートリミテッド | チェンナイ、インド</p>
+                    <p><strong>期間:</strong> 2018年3月 - 2020年12月</p>
+                    <ul>
+                        <li>日本のクライアントに対して、ハードウェアサービスのリクエストのサポートおよび技術支援をご提供しておりました。</li>
+                        <li>顧客リクエストの処理（登録、キャンセル、変更など）を担当しておりました。</li>
+                        <li>ブリッジエンジニアとして、日本のクライアントと現地チームの間で技術文書やプロジェクト要件の翻訳を行い、コミュニケーションを円滑に促進しておりました。</li>
+                        <li>プロジェクト文書、ユーザーマニュアル、電子メールの翻訳を通じて、技術情報のスムーズで正確な移転を確保しておりました。</li>
+                        <li>サービスリクエストを監視し、進捗を追跡し、問題が発生した場合は上級エンジニアにエスカレーションしておりました。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="certifications-section">
+            <h2 class="section-title">資格</h2>
+            <div class="certifications-content certifications-list">
+                <ul>
+                    <li>JLPT N2（日本語能力試験N2）</li>
+                    <li>CCNA（Cisco Certified Network Associate）</li>
+                    <li>ITIL Foundation</li>
+                    <li>AWS Certified Cloud Practitioner</li>
+                    <li>Microsoft modern desktop</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="strengths-section"> 
+            <h2 class="section-title">自己PR</h2>
+            <div class="strengths-content strengths-list">
+                <ul>
+                    <li><strong>学習意欲:</strong> 常に最新の技術動向を把握し、自身のスキル向上に積極的に取り組んでおります。資格取得や新しいツールの習得にも積極的です。</li>
+                    
+                    <li><strong>几帳面さと整理整頓:</strong> 効率的な業務遂行のため、常に整理された環境を心がけており、トラブルの迅速な特定や対応にも貢献しています。</li>
+                    
+                    <li><strong>コミュニケーション能力:</strong> 日本語能力試験N1を保持しており、日本語・英語の両方で技術文書の読解・作成が可能です。チームやお客様とのコミュニケーションも円滑に進めることができます。</li>
+                    
+                    <li><strong>問題解決能力:</strong> これまでの実務で培った分析力・トラブルシューティング能力を活かし、ネットワーク障害や端末トラブル、ソフトウェア不具合など多様なIT課題を柔軟に解決してきました。</li>
+                    
+                    <li><strong>プログラミングスキル:</strong> Pythonを活用した業務効率化や自動化スクリプトの開発経験があり、実際にメール通知システムを開発するなど、現場業務の最適化に貢献しております。</li>
+                    
+                    <li><strong>日本顧客対応の経験:</strong> キャリアの初期から日本のお客様を対象としたサポート業務に従事しており、日本のビジネスマナーや報連相（報告・連絡・相談）の重要性を理解した対応が可能です。</li>
+                    
+                    <li><strong>基礎技術力:</strong> OS（Windows/Linux）、ネットワーク（TCP/IP, VLAN, OSPF）など、ITインフラの基礎に関する深い理解があります。これらを活かし、業種や環境の異なるクライアントにも柔軟に対応してきました。</li>
+                    
+                    <li><strong>多様な環境への適応力:</strong> 日本国内外のクライアントや現場での業務経験を通じて、異なるIT環境や運用ポリシーにも迅速に適応できる柔軟性があります。</li>
+                </ul>
+            </div>
+        </section>
+        
+
+        <section class="languages-section">
+            <h2 class="section-title">言語</h2>
+            <div class="languages-content languages-list">
+                <ul>
+                    <li>英語</li>
+                    <li>日本語 (N1)</li>
+                    <li>タミル語</li>
+                </ul>
+            </div>
+        </section>
     </div>
-    <script>
-        const text = document.querySelector('.clickable-text');
-        const image = document.querySelector('.image');
-
-        // クリックイベントのリスナーを追加
-        text.addEventListener('click', function() {
-            // 画像の表示プロパティを切り替える
-            if (image.style.display === 'none') {
-                image.style.display = 'block';  // 画像を表示
-                text.style.display = 'none';    // テキストを非表示
-            } else {
-                image.style.display = 'none';   // 画像を非表示
-                text.style.display = 'block';   // テキストを表示
-            }
-        });
-    </script>
-    
-    <h2>プロフェッショナルサマリー</h2>
-    <p>システム管理、ネットワーキング、在庫管理、ハードウェア/ソフトウェアメンテナンス、情報セキュリティに特化した6年以上の実務経験を持つIT専門家です。<br>
-    エンドユーザーのコンピューティング環境を管理し、グローバルおよびローカルITチーム間で円滑なコミュニケーションを促進する能力があります。日本語（N1）、英語、タミル語に堪能で、継続的な学習と専門的な成長に強いコミットメントを持っています。<br>
-    オペレーティングシステム（OS）のプロセスやマルチスレッドに関する基礎的な知識を有し、システムレベルでのリソース管理の理解と最適化が可能です。オブジェクト指向プログラミング（OOP）とPythonに精通しており、新しいプログラミング言語や技術に迅速に適応し、拡張性のある効率的なソリューションを構築するためにコアコンセプトを効果的に活用できます。</p>
-    <hr>    
-    <h2>スキルと専門知識</h2>
-    <ul>
-        <li>オペレーティングシステム: Windows, Linux</li>
-        <li>オペレーティングシステムがプロセスとスレッド、マルチタスク、リソース割り当てを管理する方法に対する強い理解。</li>
-        <li>OS内でのプロセス管理、メモリ管理、スケジューリングに精通。</li>
-        <li>ネットワーキング: L2ネットワーキング, VLAN, OSPF, ルーティング, TCP/IP</li>
-        <li>ツール: AWS, Active Directory, MS365, CCNA, Robocopy, グループポリシー</li>
-        <li>プログラミング言語: Python, HTML, CSS</li>
-        <li>Pythonの優れた知識、オブジェクト指向プログラミング（OOP）のコアコンセプトに関する理解（例：モジュール化された再利用可能なコードを書く能力、実用的な小規模アプリケーションの開発）。</li>
-        <li>新しいプログラミング言語とフレームワークを迅速に学ぶ能力。</li>
-        <li>トラブルシューティング:
-            <ul>
-                <li>ネットワーク</li>
-                <li>サーバー</li>
-                <li>デスクトップ/ラップトップ（修理）</li>
-            </ul>
-        </li>
-        <li>その他:
-            <ul>
-                <li>EUC</li>
-                <li>データセンター管理</li>
-            </ul>
-        </li>
-    </ul>
-    <hr>
-    <h2>学歴</h2>
-    <ul>
-        <li>情報技術の学士（B-Tech）
-            <ul>
-                <li>SRMヴァリヤマイ工科大学, チェンナイ </li>
-                <li>アンナ大学</li>
-            </ul>
-        </li>
-        <li>電気電子工学のディプロマ
-            <ul>
-                <li>政府工業専門学校, チェンナイ</li>
-                <li>技術教育局</li>
-            </ul>
-        </li>
-    </ul>
-    <hr>
-    <h2>経験</h2>
-
-    <h3>ITアナリスト</h3>
-    <p>Wipro Japan | 東京、日本</p>
-    <ul>
-        <li><strong>プロジェクト:</strong> オリンパスシステムエンジニア</li>
-        <li><strong>役割:</strong> グローバルインフラチームと日本のクライアントの橋渡しエンジニアとして活動。</li>
-        <li>L2ネットワークのトラブルシューティング、ハードウェアIMAC（インストール、移動、追加、変更）、デスクトップ、ラップトップ、プリンターの修理サービスを提供。</li>
-        <li>ファイルサーバー、プリントサーバー、バックアップを含むITインフラの管理。</li>
-        <li>ベンダーサービスの調整と、IT調達・メンテナンスの対応。</li>
-        <li><strong>メールドラフト作成の自動化:</strong> CSVファイルからデータを抽出して、メールのドラフトを自動生成するPythonスクリプトを開発。<br>
-        このシステムを使用して、SCCMで抽出したCSVファイルを使い、個別のメールを効率的に生成・送信。自動化により、特定のPCユーザー向けの繰り返しのコミュニケーションタスクの時間を大幅に削減。</li>
-    </ul>
-    <!-- 以下、残りの経歴と情報も同様に日本語に翻訳してください -->
-
-    <h3>資格</h3>
-    <ul>
-        <li>JLPT N2（日本語能力試験）</li>
-        <li>CCNA（Cisco認定ネットワークアソシエイト）</li>
-        <li>ITIL Foundation</li>
-        <li>AWS認定クラウドプラクティショナー</li> 
-        <li>Microsoft現代デスクトップ</li>
-    </ul>
-    <hr>
-    <h3>強み</h3>
-    <ul>
-        <li>学び続ける意欲: 常に技術スキルを向上させ、業界の最新動向に追いつこうとしています。</li>
-        <li>整理整頓: 未来のタスクやチームのコラボレーションに向けて、きれいで整理された作業スペースを維持しています。</li>
-    </ul>
-    <h3>言語</h3>
-    <ul>
-        <li>英語</li>
-        <li>日本語</li>
-        <li>タミル語</li>
-    </ul>
-    </body>
+</body>
 </html>
